@@ -1,130 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Simply Me</title>
+  <title>Alok Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-  body {
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #1f335d; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #4d78d4; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 2px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif
+    }
+
+    body {
+      line-height: 1.8;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .margin {
+      margin-bottom: 45px;
+    }
+
+    .bg-1 {
+      background-color: #1f335d;
+      /* Green */
+      color: #ffffff;
+    }
+
+    .bg-2 {
+      background-color: #4d78d4;
+      /* Dark Blue */
+      color: #ffffff;
+    }
+
+    .bg-3 {
+      background-color: #ffffff;
+      /* White */
+      color: #555555;
+    }
+
+    .bg-4 {
+      background-color: #2f2f2f;
+      /* Black Gray */
+      color: #fff;
+    }
+
+    .container-fluid,
+    .container {
+      margin-top:15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      color:#000;
+      letter-spacing: 2px;
+      box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    }
+
+    .navbar-nav li a:hover {
+      color: #1abc9c !important;
+    }
+
+    .content-wrapper {
+      padding: 15px;
+    }
+
+    .card {
+      width: 100%;
+      box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    }
+
+    .card-container {
+      background: #fff;
+      color: #000;
+      padding: 2px 10px;
+    }
+
+    .text-grey {
+      color: #778899;
+      font-size: 14px;
+    }
+    .list-group-item.active {
+    background-color: #96a8b7;
+    border-color: #96a8b7;
+}
   </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">My Portfolio</a>
+      <a class="navbar-brand" style="color:#000;font-weight:600;" href="#">My Portfolio</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
-      </ul>
-    </div>
-</nav>
+  </nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="alok.jpg" class="img-responsive img-circle margin" style="display:inline" alt="alok" width="350" height="350">
-  <h3>Full Stack Developer</h3>
-</div>
+  <!-- First Container -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="">
+            <img src="alok.jpg" alt="Avatar" width="100%">
+            <div class="card-container">
+              <h4><b>Alok Vishwakarma</b></h4>
+              <p class="text-grey"><i class="fa fa-briefcase text-info"></i>&nbsp;&nbsp;&nbsp;Full Stack Developer</p>
+              <p class="text-grey"><i class="fa fa-tag text-info"></i>&nbsp;&nbsp;&nbsp;Sr.Software Engineer</p>
+              <p class="text-grey"><i class="fa fa-home text-info"></i>&nbsp;&nbsp;&nbsp;Xilinx Hyderabad India</p>
+              <p class="text-grey"><i class="fa fa-envelope text-info"></i>&nbsp;&nbsp;&nbsp;alok.lko631@gmail</p>
+              <p class="text-grey"><i class="fa fa-phone text-info"></i>&nbsp;&nbsp;&nbsp;+91 9666113431</p>
 
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Check out my NPM repositroy and use module in your project.</p>
-      <a href="https://www.npmjs.com/~alokvishwakarma">
-      <img src="npm.png" class="img-responsive margin" style="width:100%" alt="Image">
-      </a>
-    </div>
-    <div class="col-sm-3"> 
-      <p>My github repo with multiple projects including Angular and React.</p>
-      <a href="https://github.com/alokkarma">
-      <img src="github.png" class="img-responsive margin" style="width:100%" alt="Image">
-      </a>
-    </div>
-    <div class="col-sm-3"> 
-      <p>You can find my Published article on Medium on Frontend related stuffs.</p>
-        <a href="https://medium.com/@alok.lko631">
-        <img src="medium.png" class="img-responsive margin" style="width:100%" alt="Image">
-        </a>
-    </div>
-    <div class="col-sm-3"> 
-      <p>Check my profile answers and upvote it :) in stackoverflow.</p>
-        <a href="https://stackoverflow.com/users/4622075/dirtymind">
-        <img src="stack.png" class="img-responsive margin" style="width:100%" alt="Image">
-        </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card">
+          <div class="content-wrapper">
+            <h4><b>Skills</b></h4>
+            <div class="row">
+              <div class="col-md-3">
+                <ul class="list-group">
+                  <li class="list-group-item active"><b>Frontend</b></li>
+                  <li class="list-group-item">HTML5/CSS3</li>
+                  <li class="list-group-item">Javascript</li>
+                  <li class="list-group-item">Bootstrap</li>
+                  <li class="list-group-item">Angular Js</li>
+                  <li class="list-group-item">Angular2/7</li>
+                  <li class="list-group-item">Karma/Jasmine</li>
+                  <li class="list-group-item">Angular Material</li>
+                  <li class="list-group-item">PrimeNg</li>
+                  <li class="list-group-item">React/Redux</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                  <ul class="list-group">
+                    <li class="list-group-item active"><b>Backend</b></li>
+                    <li class="list-group-item">Java 8</li>
+                    <li class="list-group-item">Spring Boot</li>
+                    <li class="list-group-item">JPA</li>
+                    <li class="list-group-item">Kafka</li>
+                    <li class="list-group-item">Elastic Search API</li>
+                    <li class="list-group-item">Node Js</li>
+                    <li class="list-group-item">LDAP</li>
+                    <li class="list-group-item">Grails</li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-group">
+                      <li class="list-group-item active"><b>Databases</b></li>
+                      <li class="list-group-item">Elastic Search</li>
+                      <li class="list-group-item">MongoDB</li>
+                      <li class="list-group-item">My SQL</li>
+                      <li class="list-group-item">Oracle</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                      <ul class="list-group">
+                        <li class="list-group-item active"><b>Tools &amp;Others</b></li>
+                        <li class="list-group-item">Kibana</li>
+                        <li class="list-group-item">NPM</li>
+                        <li class="list-group-item">Github</li>
+                        <li class="list-group-item">Jenkins</li>
+                      </ul>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  <!-- Third Container (Grid) -->
+  <div class="container bg-3 text-center">
+    <h3 class="margin">Where To Find Me?</h3><br>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="content-wrapper">
+          <p>Check out my NPM repositroy and use module in your project.</p>
+          <a href="https://www.npmjs.com/~alokvishwakarma">
+            <img src="npm.png" class="img-responsive margin" style="width:100%" alt="Image">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="content-wrapper">
+          <p>My github repo with multiple projects including Angular and React.</p>
+          <a href="https://github.com/alokkarma">
+            <img src="github.png" class="img-responsive margin" style="width:100%" alt="Image">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="content-wrapper">
+          <p>You can find my Published article on Medium on Frontend related stuffs.</p>
+          <a href="https://medium.com/@alok.lko631">
+            <img src="medium.png" class="img-responsive margin" style="width:100%" alt="Image">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="content-wrapper">
+          <p>Check my profile answers and upvote it :) in stackoverflow.</p>
+          <a href="https://stackoverflow.com/users/4622075/dirtymind">
+            <img src="stack.png" class="img-responsive margin" style="width:100%" alt="Image">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  https://stackoverflow.com/users/4622075/dirtymind
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Footer -->
+  <footer class="container-fluid bg-4 text-center">
+    https://stackoverflow.com/users/4622075/dirtymind
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
