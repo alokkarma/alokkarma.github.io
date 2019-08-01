@@ -20,7 +20,9 @@
     h6 {
       font-family: "Roboto", sans-serif
     }
-
+    h3 > i, p > i, h5 > i {
+      margin-right:10px;
+    }
     body {
       line-height: 1.8;
     }
@@ -59,9 +61,10 @@
 
     .container-fluid,
     .container {
-      margin-top:15px;
+      margin-top: 15px;
       padding-top: 10px;
       padding-bottom: 10px;
+      max-width: 1600px;
     }
 
     .navbar {
@@ -70,7 +73,7 @@
       border: 0;
       border-radius: 0;
       margin-bottom: 0;
-      color:#000;
+      color: #000;
       box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
     }
 
@@ -97,10 +100,11 @@
       color: #778899;
       font-size: 14px;
     }
+
     .list-group-item.active {
-    background-color: #96a8b7;
-    border-color: #96a8b7;
-}
+      background-color: #96a8b7;
+      border-color: #96a8b7;
+    }
   </style>
 </head>
 
@@ -127,58 +131,60 @@
             <img src="alok.jpg" alt="Avatar" width="100%">
             <div class="card-container">
               <h4><b>Alok Vishwakarma</b></h4>
-              <p class="text-grey"><i class="fa fa-briefcase text-info"></i>&nbsp;&nbsp;&nbsp;Full Stack Developer</p>
-              <p class="text-grey"><i class="fa fa-tag text-info"></i>&nbsp;&nbsp;&nbsp;Sr.Software Engineer</p>
-              <p class="text-grey"><i class="fa fa-home text-info"></i>&nbsp;&nbsp;&nbsp;Xilinx Hyderabad India</p>
-              <p class="text-grey"><i class="fa fa-envelope text-info"></i>&nbsp;&nbsp;&nbsp;alok.lko631@gmail</p>
-              <p class="text-grey"><i class="fa fa-phone text-info"></i>&nbsp;&nbsp;&nbsp;+91 9666113431</p>
-                <hr>
-              <h5><b><i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;Education</b></h5>
+              <p class="text-grey"><i class="fa fa-briefcase text-info"></i>Full Stack Developer</p>
+              <p class="text-grey"><i class="fa fa-tag text-info"></i>Sr.Software Engineer</p>
+              <p class="text-grey"><i class="fa fa-home text-info"></i>Xilinx Hyderabad India</p>
+              <p class="text-grey"><i class="fa fa-envelope text-info"></i>alok.lko631@gmail</p>
+              <p class="text-grey"><i class="fa fa-phone text-info"></i>+91 9666113431</p>
+              <hr>
+              <h5><i class="fa fa-institution"></i><b>Education</b></h5>
               <h6 class="text-grey">G.L.Bajaj Institute (UPTU)</h6>
-              <p class="text-grey"><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;2008-2012 B.Tech</p>
+              <p class="text-grey"><i class="fa fa-calendar"></i>2008-2012 B.Tech</p>
               <hr>
               <h6 class="text-grey">Kendriya Vidyalaya</h6>
-              <p class="text-grey"><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;2007 HSC(Intermediate)</p>
-              <h6 class="text-grey">Rani Laxmi Bai School</h6>
+              <p class="text-grey"><i class="fa fa-calendar"></i>2007 HSC(Intermediate)</p>
               <hr>
-              <p class="text-grey"><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;2005 SSC(High School)
+              <h6 class="text-grey">Rani Laxmi Bai School</h6>
+              <p class="text-grey"><i class="fa fa-calendar"></i>2005 SSC(High School)
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-9">
-        <div class="card">
-          <div class="content-wrapper">
-            <h4><b>Skills</b></h4>
-            <div class="row">
-              <div class="col-md-3">
-                <ul class="list-group">
-                  <li class="list-group-item active"><b>Frontend</b></li>
-                  <li class="list-group-item">HTML5/CSS3</li>
-                  <li class="list-group-item">Javascript</li>
-                  <li class="list-group-item">Bootstrap</li>
-                  <li class="list-group-item">Angular Js</li>
-                  <li class="list-group-item">Angular2/7</li>
-                  <li class="list-group-item">Karma/Jasmine</li>
-                  <li class="list-group-item">Angular Material</li>
-                  <li class="list-group-item">PrimeNg</li>
-                  <li class="list-group-item">React/Redux</li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                  <ul class="list-group">
-                    <li class="list-group-item active"><b>Backend</b></li>
-                    <li class="list-group-item">Java 8</li>
-                    <li class="list-group-item">Spring Boot</li>
-                    <li class="list-group-item">JPA</li>
-                    <li class="list-group-item">Kafka</li>
-                    <li class="list-group-item">Elastic Search API</li>
-                    <li class="list-group-item">Node Js</li>
-                    <li class="list-group-item">LDAP</li>
-                    <li class="list-group-item">Grails</li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="content-wrapper">
+                <h3><i class="fa fa-bookmark"></i>Skills</h3>
+                <div class="row">
+                  <div class="col-md-3">
+                    <ul class="list-group">
+                      <li class="list-group-item active"><b>Frontend</b></li>
+                      <li class="list-group-item">HTML5/CSS3</li>
+                      <li class="list-group-item">Javascript</li>
+                      <li class="list-group-item">Bootstrap</li>
+                      <li class="list-group-item">Angular Js</li>
+                      <li class="list-group-item">Angular2/7</li>
+                      <li class="list-group-item">Karma/Jasmine</li>
+                      <li class="list-group-item">Angular Material</li>
+                      <li class="list-group-item">PrimeNg</li>
+                      <li class="list-group-item">React/Redux</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="list-group">
+                      <li class="list-group-item active"><b>Backend</b></li>
+                      <li class="list-group-item">Java 8</li>
+                      <li class="list-group-item">Spring Boot</li>
+                      <li class="list-group-item">JPA</li>
+                      <li class="list-group-item">Kafka</li>
+                      <li class="list-group-item">Elastic Search API</li>
+                      <li class="list-group-item">Node Js</li>
+                      <li class="list-group-item">LDAP</li>
+                      <li class="list-group-item">Grails</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
                     <ul class="list-group">
                       <li class="list-group-item active"><b>Databases</b></li>
                       <li class="list-group-item">Elastic Search</li>
@@ -191,66 +197,88 @@
                     </ul>
                   </div>
                   <div class="col-md-3">
-                      <ul class="list-group">
-                        <li class="list-group-item active"><b>Tools &amp;Others</b></li>
-                        <li class="list-group-item">Kibana</li>
-                        <li class="list-group-item">NPM</li>
-                        <li class="list-group-item">Github</li>
-                        <li class="list-group-item">Jenkins</li>
-                      </ul>
-                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item active"><b>Tools &amp;Others</b></li>
+                      <li class="list-group-item">Kibana</li>
+                      <li class="list-group-item">NPM</li>
+                      <li class="list-group-item">Github</li>
+                      <li class="list-group-item">Jenkins</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <!-- Work -->
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="content-wrapper">
+                  <h3><i class="fa fa-briefcase"></i>Work Experience</h3>
+                  <div class="content-wrapper">
+                  <h4>Xilinx India Private Limited / Full Stack Developer</h4>
+                  <h5><i class="fa fa-calendar"></i>June 2018- <span class="label label-success" style="font-size:12px;">Current</span> Sr. Software Engineer</h5>
+                  <hr>
+                  <h4>Qualcomm India Private Limited / Full Stack Developer</h4>
+                  <h5><i class="fa fa-calendar"></i>May 2015-2018 Sr. Programmer Analyst</h5>
+                  <hr>
+                  <h4>Virtusa Technology Services / FrontEnd Developer</h4>
+                  <h5><i class="fa fa-calendar"></i>Mar 2013-2015 Engineer</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">
+      <hr>
+      <h3 class="margin">Where To Find Me?</h3><br>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="content-wrapper">
+            <p>Check out my NPM repositroy and use module in your project.</p>
+            <a href="https://www.npmjs.com/~alokvishwakarma">
+              <img src="npm.png" class="img-responsive margin" style="width:100%" alt="Image">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="content-wrapper">
+            <p>My github repo with multiple projects including Angular and React.</p>
+            <a href="https://github.com/alokkarma">
+              <img src="github.png" class="img-responsive margin" style="width:100%" alt="Image">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="content-wrapper">
+            <p>You can find my Published article on Medium on Frontend related stuffs.</p>
+            <a href="https://medium.com/@alok.lko631">
+              <img src="medium.png" class="img-responsive margin" style="width:100%" alt="Image">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="content-wrapper">
+            <p>Check my profile answers and upvote it :) in stackoverflow.</p>
+            <a href="https://stackoverflow.com/users/4622075/dirtymind">
+              <img src="stack.png" class="img-responsive margin" style="width:100%" alt="Image">
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <hr>
-  <!-- Third Container (Grid) -->
-  <div class="container bg-3 text-center">
-    <h3 class="margin">Where To Find Me?</h3><br>
-    <div class="row">
-      <div class="col-sm-3">
-        <div class="content-wrapper">
-          <p>Check out my NPM repositroy and use module in your project.</p>
-          <a href="https://www.npmjs.com/~alokvishwakarma">
-            <img src="npm.png" class="img-responsive margin" style="width:100%" alt="Image">
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="content-wrapper">
-          <p>My github repo with multiple projects including Angular and React.</p>
-          <a href="https://github.com/alokkarma">
-            <img src="github.png" class="img-responsive margin" style="width:100%" alt="Image">
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="content-wrapper">
-          <p>You can find my Published article on Medium on Frontend related stuffs.</p>
-          <a href="https://medium.com/@alok.lko631">
-            <img src="medium.png" class="img-responsive margin" style="width:100%" alt="Image">
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="content-wrapper">
-          <p>Check my profile answers and upvote it :) in stackoverflow.</p>
-          <a href="https://stackoverflow.com/users/4622075/dirtymind">
-            <img src="stack.png" class="img-responsive margin" style="width:100%" alt="Image">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="container-fluid bg-4 text-center">
-    https://stackoverflow.com/users/4622075/dirtymind
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="bg-4 text-center" style="width:100%;">
+      https://stackoverflow.com/users/4622075/dirtymind
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
