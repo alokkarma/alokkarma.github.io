@@ -74,6 +74,7 @@
 
     .card {
       width: 100%;
+	  border-radius:8px;
       box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
     }
 
@@ -92,9 +93,22 @@
       background-color: #96a8b7;
       border-color: #96a8b7;
     }
-    footer {
+    footer, .pd-20 {
       padding:20px;
     }
+	.fade-in-down {
+    animation: fade-in-down .6s ease;
+  }
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   </style>
 </head>
 
@@ -103,7 +117,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-default">
     <div class="navbar-header">
-      <a class="navbar-brand" style="color:#000;font-weight:600;" href="#">My Portfolio</a>
+      <a class="navbar-brand" style="color:#000;font-weight:600;" href="#">Alok Vishwakarma</a>
     </div>
     <div class="pull-right" style="margin-right:20px;padding:5px 15px; border: 1px solid #96a8b7; border-radius:6px;">
         <a style="text-decoration: none;" href="Alok_resume.pdf" title="Download Resume" download>
@@ -114,14 +128,14 @@
   </nav>
 
   <!-- First Container -->
-  <div class="container-fluid">
+  <div class="container-fluid fade-in-down">
     <div class="row">
       <div class="col-md-3">
         <div class="card">
           <div class="">
             <img src="alok.jpg" alt="Avatar" width="100%">
             <div class="card-container">
-              <h4><b>Alok Vishwakarma</b></h4>
+              <!-- <h4><b>Alok Vishwakarma</b></h4> -->
               <p class="text-grey"><i class="fa fa-briefcase text-info"></i>Full Stack Developer</p>
               <p class="text-grey"><i class="fa fa-tag text-info"></i>Sr.Software Engineer</p>
               <p class="text-grey"><i class="fa fa-home text-info"></i>Xilinx Hyderabad India</p>
@@ -142,7 +156,47 @@
         </div>
       </div>
       <div class="col-md-9">
+        <!-- Work -->
         <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="content-wrapper">
+                  <h3><i class="fa fa-briefcase"></i>Work Experience</h3>
+                  <div class="content-wrapper">
+				  <div class="row">
+				  <div class="col-md-8 pd-20">
+				  <h4>Service Now / Front End Developer</h4>
+                  <h5 class="text-grey"><i class="fa fa-calendar"></i>June 2021- <span class="label label-success" style="font-size:12px;">Current</span> Sr. Software Engineer</h5>
+				  </div>
+				  <div class="col-md-4 pd-20">
+					<img src="servicenow.png" height="25px" width="130px">
+				  </div>
+				  <div class="col-md-8 pd-20">
+                  <h4>Xilinx India Private Limited / Full Stack Developer</h4>
+                  <h5 class="text-grey"><i class="fa fa-calendar"></i>June 2018-2021 Sr. Software Engineer</h5>
+				  </div>
+				  <div class="col-md-4 pd-20">
+					<img src="xilinx.png" height="25px" width="130px">
+				  </div>
+                  <hr>
+				  <div class="col-md-8 pd-20">
+                  <h4>Qualcomm India Private Limited / Full Stack Developer</h4>
+                  <h5 class="text-grey"><i class="fa fa-calendar"></i>May 2015-2018 Sr. Programmer Analyst</h5>
+				  </div>
+				  <div class="col-md-4 pd-20"><img src="qual.png" height="25px" width="130px"></div>
+                  <hr>
+				  <div class="col-md-8 pd-20">
+                  <h4>Virtusa Technology Services / FrontEnd Developer</h4>
+                  <h5 class="text-grey"><i class="fa fa-calendar"></i>Mar 2013-2015 Engineer</h5>
+				  </div>
+				  <div class="col-md-4 pd-20"><img src="virtusa.png" height="25px" width="130px"></div>
+				  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  <div class="row" style="margin-top:20px;">
           <div class="col-md-12">
             <div class="card">
               <div class="content-wrapper">
@@ -201,26 +255,6 @@
             </div>
           </div>
         </div>
-        <!-- Work -->
-        <div class="row" style="margin-top:20px;">
-            <div class="col-md-12">
-              <div class="card">
-                <div class="content-wrapper">
-                  <h3><i class="fa fa-briefcase"></i>Work Experience</h3>
-                  <div class="content-wrapper">
-                  <h4>Xilinx India Private Limited / Full Stack Developer</h4>
-                  <h5 class="text-grey"><i class="fa fa-calendar"></i>June 2018- <span class="label label-success" style="font-size:12px;">Current</span> Sr. Software Engineer</h5>
-                  <hr>
-                  <h4>Qualcomm India Private Limited / Full Stack Developer</h4>
-                  <h5 class="text-grey"><i class="fa fa-calendar"></i>May 2015-2018 Sr. Programmer Analyst</h5>
-                  <hr>
-                  <h4>Virtusa Technology Services / FrontEnd Developer</h4>
-                  <h5 class="text-grey"><i class="fa fa-calendar"></i>Mar 2013-2015 Engineer</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
       </div>
     </div>
     </div>
